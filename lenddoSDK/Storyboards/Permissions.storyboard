@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nir-re-mvy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Required Permissions-->
+        <scene sceneID="qID-hQ-Clg">
+            <objects>
+                <viewController id="8d2-WJ-ySX" customClass="PermissionsViewController" customModule="lenddoSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10L-Ye-f67">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHp-0T-rQ0">
+                                <rect key="frame" x="32" y="780" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.27450980392156865" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kTt-ZS-mKV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Yes, Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonAction:" destination="8d2-WJ-ySX" eventType="touchUpInside" id="p4d-JL-c2s"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-nz-Eag">
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtM-2E-81w">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="574"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to generate your credit score, LenddoEFL is requesting the following permissions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIc-VK-8Am">
+                                                <rect key="frame" x="0.0" y="16" width="382" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ia-vj-nZ0">
+                                                <rect key="frame" x="0.0" y="70.5" width="382" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxa-7m-bDu">
+                                                <rect key="frame" x="0.0" y="94" width="382" height="76.5"/>
+                                                <string key="text">We study periodic locational activity. This helps us estimate with a fair level of accuracy on your most visited locations. We use this as a signal for building your credit score.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar Events" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGx-Bi-Yr4">
+                                                <rect key="frame" x="0.0" y="194.5" width="382" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-is-af5">
+                                                <rect key="frame" x="0.0" y="218" width="382" height="115"/>
+                                                <string key="text">Having access to calendar events helps us determine the time of the day you are most busy. People who are busy during the day have different credit behaviour than people who are busy during the night. We use this as a signal for building your credit score.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rd-ph-jC3">
+                                                <rect key="frame" x="0.0" y="357" width="382" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8t-o4-3c0">
+                                                <rect key="frame" x="0.0" y="380.5" width="382" height="115"/>
+                                                <string key="text">We access your contacts details to determine a list of people you socialise with. This data helps us to then build a social graph to assist with your credit score. We will only use this data for your personal score and we will not contact any of these people in your contact list.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All your personal information is kept 100% secure. Do you want to allow the permissions?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiX-5D-hGp">
+                                                <rect key="frame" x="0.0" y="519.5" width="382" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YIh-is-af5" firstAttribute="trailing" secondItem="vGx-Bi-Yr4" secondAttribute="trailing" id="0Fa-Ju-59l"/>
+                                            <constraint firstItem="Xxa-7m-bDu" firstAttribute="top" secondItem="3ia-vj-nZ0" secondAttribute="bottom" constant="4" id="2SB-MW-B6H"/>
+                                            <constraint firstItem="f8t-o4-3c0" firstAttribute="top" secondItem="6Rd-ph-jC3" secondAttribute="bottom" constant="4" id="DoG-se-bqS"/>
+                                            <constraint firstItem="vGx-Bi-Yr4" firstAttribute="leading" secondItem="Xxa-7m-bDu" secondAttribute="leading" id="HlF-tj-pip"/>
+                                            <constraint firstItem="f8t-o4-3c0" firstAttribute="trailing" secondItem="6Rd-ph-jC3" secondAttribute="trailing" id="ID0-wr-GyF"/>
+                                            <constraint firstItem="3ia-vj-nZ0" firstAttribute="trailing" secondItem="zIc-VK-8Am" secondAttribute="trailing" id="IUC-wE-tvS"/>
+                                            <constraint firstItem="f8t-o4-3c0" firstAttribute="leading" secondItem="6Rd-ph-jC3" secondAttribute="leading" id="IhZ-I3-UNX"/>
+                                            <constraint firstItem="hiX-5D-hGp" firstAttribute="leading" secondItem="f8t-o4-3c0" secondAttribute="leading" id="OrO-b2-AMJ"/>
+                                            <constraint firstItem="6Rd-ph-jC3" firstAttribute="trailing" secondItem="YIh-is-af5" secondAttribute="trailing" id="PfM-Ou-H4U"/>
+                                            <constraint firstItem="YIh-is-af5" firstAttribute="leading" secondItem="vGx-Bi-Yr4" secondAttribute="leading" id="RE6-8Q-UkQ"/>
+                                            <constraint firstItem="zIc-VK-8Am" firstAttribute="top" secondItem="qtM-2E-81w" secondAttribute="top" constant="16" id="Sac-9G-VS7"/>
+                                            <constraint firstItem="Xxa-7m-bDu" firstAttribute="trailing" secondItem="3ia-vj-nZ0" secondAttribute="trailing" id="TVa-cb-Gdp"/>
+                                            <constraint firstItem="6Rd-ph-jC3" firstAttribute="top" secondItem="YIh-is-af5" secondAttribute="bottom" constant="24" id="VS6-uu-CNL"/>
+                                            <constraint firstItem="hiX-5D-hGp" firstAttribute="top" secondItem="f8t-o4-3c0" secondAttribute="bottom" constant="24" id="bOO-ti-YWi"/>
+                                            <constraint firstItem="YIh-is-af5" firstAttribute="top" secondItem="vGx-Bi-Yr4" secondAttribute="bottom" constant="4" id="bwx-l3-0O1"/>
+                                            <constraint firstItem="3ia-vj-nZ0" firstAttribute="leading" secondItem="zIc-VK-8Am" secondAttribute="leading" id="c5F-wb-tKr"/>
+                                            <constraint firstItem="vGx-Bi-Yr4" firstAttribute="top" secondItem="Xxa-7m-bDu" secondAttribute="bottom" constant="24" id="dfs-tU-Rz1"/>
+                                            <constraint firstItem="vGx-Bi-Yr4" firstAttribute="trailing" secondItem="Xxa-7m-bDu" secondAttribute="trailing" id="iV1-Rm-Zhd"/>
+                                            <constraint firstItem="zIc-VK-8Am" firstAttribute="leading" secondItem="qtM-2E-81w" secondAttribute="leading" id="mJ8-pB-CHx"/>
+                                            <constraint firstAttribute="trailing" secondItem="zIc-VK-8Am" secondAttribute="trailing" id="nXh-TQ-KC8"/>
+                                            <constraint firstItem="Xxa-7m-bDu" firstAttribute="leading" secondItem="3ia-vj-nZ0" secondAttribute="leading" id="qEI-2u-hDS"/>
+                                            <constraint firstAttribute="bottom" secondItem="hiX-5D-hGp" secondAttribute="bottom" constant="16" id="rEc-Ik-vV1"/>
+                                            <constraint firstItem="6Rd-ph-jC3" firstAttribute="leading" secondItem="YIh-is-af5" secondAttribute="leading" id="uhQ-sF-YML"/>
+                                            <constraint firstItem="hiX-5D-hGp" firstAttribute="trailing" secondItem="f8t-o4-3c0" secondAttribute="trailing" id="vG7-xQ-hm6"/>
+                                            <constraint firstItem="3ia-vj-nZ0" firstAttribute="top" secondItem="zIc-VK-8Am" secondAttribute="bottom" constant="16" id="wLm-fJ-Wfm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qtM-2E-81w" firstAttribute="top" secondItem="WfN-nz-Eag" secondAttribute="top" id="F8Y-ND-fvJ"/>
+                                    <constraint firstItem="qtM-2E-81w" firstAttribute="leading" secondItem="WfN-nz-Eag" secondAttribute="leading" constant="16" id="W51-iK-XYQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="qtM-2E-81w" secondAttribute="trailing" constant="16" id="jma-E7-8DL"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtM-2E-81w" secondAttribute="bottom" id="vdL-uF-a5T"/>
+                                    <constraint firstItem="qtM-2E-81w" firstAttribute="centerX" secondItem="WfN-nz-Eag" secondAttribute="centerX" id="zH1-dy-b10"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="z2g-dX-OkD"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fQt-OK-QBU"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yO7-5m-i9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yO7-5m-i9q" firstAttribute="trailing" secondItem="WfN-nz-Eag" secondAttribute="trailing" id="2qB-Hm-P1d"/>
+                            <constraint firstItem="yO7-5m-i9q" firstAttribute="trailing" secondItem="NHp-0T-rQ0" secondAttribute="trailing" constant="32" id="7zp-Bb-zMU"/>
+                            <constraint firstItem="NHp-0T-rQ0" firstAttribute="leading" secondItem="yO7-5m-i9q" secondAttribute="leading" constant="32" id="HST-t0-aMg"/>
+                            <constraint firstItem="WfN-nz-Eag" firstAttribute="leading" secondItem="yO7-5m-i9q" secondAttribute="leading" id="Kgr-aa-T4x"/>
+                            <constraint firstItem="WfN-nz-Eag" firstAttribute="top" secondItem="yO7-5m-i9q" secondAttribute="top" id="QeO-8H-hLn"/>
+                            <constraint firstItem="yO7-5m-i9q" firstAttribute="bottom" secondItem="NHp-0T-rQ0" secondAttribute="bottom" constant="32" id="xqs-9g-cD0"/>
+                            <constraint firstItem="NHp-0T-rQ0" firstAttribute="top" secondItem="WfN-nz-Eag" secondAttribute="bottom" constant="16" id="zqy-e0-gvu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Required Permissions" id="zhI-gt-5dj">
+                        <barButtonItem key="leftBarButtonItem" image="back-white" id="wAN-m8-iuD">
+                            <connections>
+                                <action selector="backButtonAction:" destination="8d2-WJ-ySX" id="y1L-Th-tnG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="areyouSureLabel" destination="hiX-5D-hGp" id="fDN-te-iAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Li6-Hr-K3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.11594202898561" y="90.401785714285708"/>
+        </scene>
+        <!--Blue Navigation Controller-->
+        <scene sceneID="PRt-TY-EII">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nir-re-mvy" customClass="BlueNavigationController" customModule="lenddoSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eiy-zC-7iz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8d2-WJ-ySX" kind="relationship" relationship="rootViewController" id="hPx-s8-VLx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FY-32-Hmo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142.02898550724638" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-white" width="23.333333969116211" height="23.333333969116211"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
