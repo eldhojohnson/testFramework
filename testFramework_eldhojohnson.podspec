@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "testFramework_eldhojohnson"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Lenddo SDK is used for company testing purposes."
 
   # This description is used to generate tags and improve search results.
