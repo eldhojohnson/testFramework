@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "testFramework"
+  spec.name         = "testFramework_eldhojohnson"
   spec.version      = "0.0.1"
   spec.summary      = "Lenddo SDK is used for company testing purposes."
 
